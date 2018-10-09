@@ -1,0 +1,129 @@
+.comment {
+	max-width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.comment__header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.comment__title {
+	@include vh; 
+}
+
+.comment__form {
+}
+
+.comment__form-item {
+  max-width: 290px;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 12px;
+}
+
+
+.comment__label {
+	display: block;
+	margin-bottom: 4px;
+	padding-left: 2px;
+
+	@include typography-body1;
+}
+
+.comment__input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+
+  padding: 8px 4px;
+
+  border: 2px solid $grey;
+  border-radius: 4px;
+
+  @include typography-caption;
+  color: $grey;
+
+  outline: none;
+  transition: background-color, border-color 0.2s;
+}
+
+.comment__input:focus {
+  background-color: $dark-blue;
+  border-color: $red;
+}
+
+.comment__input--area {
+	 height: 140px;
+	 resize: none;
+}
+
+.comment__error {
+	visibility: hidden;
+	height: 15px;
+	padding-left: 2px;
+	margin-top: 4px;
+
+	@include typography-caption;
+	color: $red;
+}
+
+.comment__form-item--error .comment__error {
+	visibility: visible;
+}
+
+.comment__label {
+	color: $grey;
+}
+
+.comment__star {
+	color: $red;
+}
+
+.comment__status {
+	height: 24px;
+	margin-top: 32px;
+
+	@include typography-body1;
+	text-align: center;
+	color: $green;
+}
+
+.comment__status--error {
+	color: $red;
+}
+
+.comment__btn-block {
+	text-align: right;
+}
+
+.comment__btn {
+	@include btn;
+	@include typography-button;
+
+	margin-top: 32px;
+
+	border-radius: 4px;
+	background-color: $red;
+	padding: 2px 16px 0 16px;
+	text-transform: uppercase;
+	color: $grey;
+	outline: none;
+
+	transition: background-color 0.1s;
+}
+
+.comment__btn:hover {
+	background-color: $dark-red;
+}
+
+.comment__btn:active {
+	color: $dark-grey;
+}
+
+.comment__btn:disabled {
+	background-color: $super-dark-grey;
+	cursor: none;
+}

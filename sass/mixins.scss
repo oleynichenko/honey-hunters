@@ -1,0 +1,66 @@
+@mixin vh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin btn {
+  padding: 0;
+  
+  border: none;
+
+  font: inherit;
+  text-transform: inherit;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+}
+
+@mixin typography-h4 {
+	font-size: 34px;
+	line-height: 40px;
+}
+
+@mixin typography-h5 {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+@mixin typography-h6 {
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: 500;
+}
+
+@mixin typography-body2 {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@mixin typography-body1 {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+@mixin typography-caption {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+@mixin typography-button {
+	font-size: 14px;
+	line-height: 36px;
+	letter-spacing: 1px;
+	font-weight: 500;
+}

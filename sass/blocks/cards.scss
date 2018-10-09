@@ -1,0 +1,112 @@
+.cards {	
+	max-width: $max-page-width;	
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 64px;
+	padding-bottom: 32px;	
+}
+
+.cards__title {
+	margin-bottom: 40px;
+
+	@include typography-h4;
+	text-align: center;
+}
+
+.cards__container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cards__item {
+	max-width: 320px;
+	margin-bottom: 48px;
+	
+	text-align: center;
+	opacity: 0;
+	animation: show 1.5s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.2s;
+	animation-timing-function: easy-in;
+
+
+	&:nth-child(odd) {
+		& .cards__item-header {
+			background-color: $blue;	
+		}
+
+		.cards__item-email {
+			color: $blue;
+		}
+
+		& .cards__item-content {
+			background-color: $light-blue;	
+		}
+	}
+
+	&:nth-child(even) {
+		& .cards__item-header {
+			background-color: $green;		
+		}
+
+		.cards__item-email {
+			color: $green;
+		}
+
+		& .cards__item-content {
+			background-color: $light-green;	
+		}
+	}
+}
+
+.cards__item-header {
+	position: relative;
+
+	padding: 24px 36px;
+	border-radius: 4px;
+
+	z-index: 1;
+}
+
+.cards__item-title {
+	height: 32px;
+
+	@include typography-h5;
+	color: $grey;	
+	overflow: hidden;
+}
+
+.cards__item-content {
+	position: relative;
+	top: -2px;
+
+	padding: 36px 36px;
+	border-radius: 4px;
+}
+
+.cards__item-email {
+	height: 32px;
+	margin-bottom: 12px;
+
+	@include typography-body1;
+	font-weight: 500;
+
+	overflow: hidden;
+}
+
+.cards__item-message {
+	@include typography-body2;
+	overflow: hidden;
+
+	height: 145px;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1
+	}
+}

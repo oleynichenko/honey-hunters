@@ -1,0 +1,32 @@
+.header {
+	background-color: $black;	
+}
+
+.header__content {
+	max-width: $max-page-width;
+	padding-top: 16px;
+	padding-bottom: 64px;
+}
+
+.header__logo {
+	margin-bottom: 24px;
+}
+
+.header__title {
+	@include vh;
+}
+
+.header__img {
+	display: block;
+  line-height: 1;
+  font-size: 0;
+}
+
+@media (min-width: 768px) {
+	.header__content {
+		padding-top: 24px;
+	}
+	.header__logo {
+		margin-bottom: 48px;
+	}
+}

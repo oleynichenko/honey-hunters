@@ -1,0 +1,33 @@
+.footer {
+	background-color: $black;	
+}
+
+.footer__content {
+	display: flex;
+	justify-content: space-between;
+	max-width: $max-page-width;
+	padding-top: 20px;
+	padding-bottom: 20px;	
+}
+
+.footer__logo {
+	display: flex;
+	align-items: center;
+}
+
+.footer__logo img {
+	width: 118px;
+	height: 24px;
+}
+
+@media (min-width: 768px) {
+	.footer__content {
+		padding-top: 32px;
+		padding-bottom: 32px;	
+	}
+
+	.footer__logo img {
+		width: 145px;
+		height: 30px;
+	}	
+}

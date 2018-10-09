@@ -1,0 +1,12 @@
+CREATE DATABASE hhm
+  DEFAULT CHARACTER SET utf8
+  DEFAULT COLLATE utf8_general_ci;
+
+USE hhm;
+
+CREATE TABLE comments (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name CHAR(128),
+  email CHAR(128),
+  message CHAR(255)
+);

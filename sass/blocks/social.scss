@@ -1,0 +1,46 @@
+.social {
+	display: flex;
+}
+
+.social__link {
+	line-height: 1;
+	width: 28px;
+	height: 28px;
+	margin-right: 12px;
+
+	border: 1px solid $grey;
+	border-radius: 50%;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:active {
+		opacity: 0.5;
+	}
+}
+
+.social__link-svg {
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: auto;
+	margin-top: 4px;
+	fill: $grey;
+}
+
+@media (min-width: 768px) {
+	.social__link {
+		width: 32px;
+		height: 32px;
+	}
+	.social__link-svg {
+		width: 20px;
+		height: 20px;
+		margin-top: 5px;
+	}
+}
